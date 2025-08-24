@@ -1,0 +1,76 @@
+1. 🎨 UI & Visuals
+
+Floating Emojis → Animated background with ⚡🔥💫 for dopamine vibes.
+
+Dashboard Components → Badges, streaks, wallet, leaderboards, etc.
+
+Task Cards → Instagram-reel style task display with swipe (ChevronLeft, ChevronRight) + buttons (“Nah ❌ / Let’s Go 🚀”).
+
+Memey Language → Buttons like “Kill My Boredom 🔪”, “Proof Locked In 🔒”.
+
+2. ⚡ Aptos Wallet (Mocked)
+
+AptosContext → provides wallet connection state.
+
+mockAptosWallet → fake connect/disconnect/getBalance for demo.
+
+Displays connected wallet address + mock KYB token balance.
+(Can be swapped later with real Aptos SDK.)
+
+3. 🎯 Task Generator & Verification
+
+Dynamic Task Suggestions:
+
+Categories → Photo/Video, Creative, Mood Boosters, Mini Dares, etc.
+
+Ensures tasks don’t repeat (task history tracked).
+
+Generates 3 unique tasks per boredom query.
+
+Task Proof System:
+
+Uploads (photo/video/text).
+
+Blocks progress until proof is submitted.
+
+Simulated verification lock before next task unlocks.
+
+4. 🏆 Gamification
+
+Points + KYB Tokens → Earned after task completion.
+
+Streak Tracking → Daily streaks with streak-freeze.
+
+Badges → e.g. “🔥 Task Slayer”, “🎭 Drama Queen”.
+
+Roulette Mode → Random task spinner with multipliers.
+
+Leaderboards & Stats → Rank, XP, streaks, creativity score.
+
+5. 📱 Main User Flow
+
+Onboarding → User sets age, vibe, energy, boldness.
+
+Dashboard → Shows streaks, stats, wallet, and “Kill My Boredom” button.
+
+Task Flow →
+
+User inputs boredom situation (or quick vibe select).
+
+Generator returns 3 swipeable task options.
+
+User accepts → moves to proof screen.
+
+Verification & Rewards → Proof checked → user gets tokens, streak points.
+
+Repeat Cycle → Keeps boredom away with infinite dopamine hits.
+
+6. 📊 Advanced Touches
+
+Haptic-like animations (Framer Motion).
+
+Dark mode default + neon accents.
+
+Social sharing buttons (Share2, MessageCircle).
+
+Progress persistence (streaks, history, preferences saved).
